@@ -395,6 +395,13 @@ color: #000000;
   background-color: var(--accent-color)
 }
 
+.btn:hover,
+.btn:focus {
+  background-color: var(--accent-color);
+  color: var(--main-bgd-color);
+  cursor: pointer;  
+}
+
 /* < !-- Gallery --> */
 
 
