@@ -40,7 +40,7 @@ h5 {
   padding-left: 15px;
   padding-right: 15px;
   margin: 0 auto;
-  /* outline: 1px solid red */
+  outline: 1px solid red
 }
 
 .section {
@@ -69,11 +69,10 @@ h5 {
 }
 /* Хедер */
 
+
 .header > .container {
   display: flex;
   align-items: center;
-  padding-top: 24px;
-  padding-bottom: 24px;
 }
 
 .header {
@@ -101,13 +100,14 @@ color: #000000;
 }
 
 .nav-link {
-  padding: 24px 0;
+  padding: 32px 0;  
+  display: block;
+
   color: var(--title-color);
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
-  cursor: pointer;
 }
 
 .site-nav .nav-item + .nav-item {
@@ -130,24 +130,22 @@ color: #000000;
   margin-left: auto;
 }
 
-.header-contacts .header-item + .header-item {
-  margin-left: 50px;
-}
-
 .header-email,
 .header-tel {
+  padding: 32px 0;
+  display: block;  
+
   color: var(--text-color);
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
   text-decoration: none;
-  cursor: pointer;
-
 }
-.header-email.current {
-  color: var(--accent-color);
-} 
+
+.header-contacts .header-item+.header-item {
+  margin-left: 50px;
+}
 
 .header-contacts a:hover,
 .header-contacts a:focus {
@@ -156,6 +154,8 @@ color: #000000;
         
 /* Hero section */
 .hero {
+  padding-top: 200px;
+  padding-bottom: 200px;
   background-color: var(--footer-bgd-color);  
   text-align: center;
 }
@@ -211,7 +211,7 @@ color: #000000;
 }
 
 .advantages-subtitle {
-  padding-bottom: 10px;
+  margin-bottom: 10px;
 
   color: var(--title-color); 
   font-weight: 700;
@@ -308,12 +308,9 @@ color: #000000;
 }
 /* Футер */
 .footer {
-  background-color: var(--footer-bgd-color);
-}
-
-.footer .container {
   padding-top: 60px;
   padding-bottom: 60px;
+  background-color: var(--footer-bgd-color);
 }
 
 .footer-logo {
@@ -328,12 +325,20 @@ color: #000000;
   color: var(--main-bgd-color);
 }
 
-.footer-address {
+.address-list {
   margin-top: 20px;
+}
+
+.footer-address {
   color: #FFFFFF;
   font-size: 14px;
   line-height: 1.72;
-  font-style: normal;  
+  font-style: normal;
+}
+
+.footer-tel-item,
+.footer-mail-item {
+  margin-top: 8px;
 }
 
 .footer-email,
